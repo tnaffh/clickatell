@@ -9,7 +9,7 @@
             "email": "gerhard@ccom.co.za"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "illuminate/support": "^5.3",
         "guzzlehttp/guzzle": "^6.2"

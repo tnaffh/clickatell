@@ -24,15 +24,15 @@ class Clickatell
 					"to" => [$to]
 				]
 			]);
-		} catch (Exception $e) {
-			throw new Exception($e->getMessage(), 422);
+		} catch (\Exception $e) {
+			throw new \Exception($e->getMessage(), 422);
 		}
 	}
 
 	public function sendMessages(array $to, $message)
 	{
 		if(count($to) > 500)
-			throw new Exception("You cannot send to more then 500 numbers in 1 request", 422);
+			throw new \Exception("Max Limit Reached, can only send to 500 in a single request, " . count($to) . " given.", 422);
 
 		try {
 			return $this->client->post($this->endpoint, [
@@ -41,8 +41,8 @@ class Clickatell
 					"to" => $to
 				]
 			]);
-		} catch (Exception $e) {
-			throw new Exception($e->getMessage(), 422);
+		} catch (\Exception $e) {
+			throw new \Exception($e->getMessage(), 422);
 		}
 	}
 

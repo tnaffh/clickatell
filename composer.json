@@ -1,0 +1,21 @@
+{
+    "name": "ccom/clickatell",
+    "description": "A simple Laravel wrapper for the Clickatell REST Api",    
+    "license": "MIT",
+    "keywords": ["laravel", "clickatell", "sms"],
+    "authors": [
+        {
+            "name": "Gerhard Theunissen",
+            "email": "gerhard@ccom.co.za"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ccom\\": "src/"
+        }
+    }
+}

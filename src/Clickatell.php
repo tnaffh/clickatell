@@ -15,13 +15,13 @@ class Clickatell
 		$this->client = new Guzzle($this->getHeaders());
 	}
 
-	public function sendMessage($to, $message)
+	public function sendMessage(string $to, $message)
 	{
 		try {
 			return $this->client->post($this->endpoint, [
 				'json' => [
 					'content' => $message,
-					"to" => [(string) $to]
+					"to" => [$to]
 				]
 			]);
 		} catch (Exception $e) {

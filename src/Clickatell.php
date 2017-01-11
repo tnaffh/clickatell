@@ -7,6 +7,7 @@ use GuzzleHttp\Client as Guzzle;
 class Clickatell
 {
 	protected $client;
+
 	protected $endpoint = 'https://platform.clickatell.com/messages';
 
 	public function __construct()
@@ -21,6 +22,23 @@ class Clickatell
 				'json' => [
 					'content' => $message,
 					"to" => [(string) $to]
+				]
+			]);
+		} catch (Exception $e) {
+			throw new Exception($e->getMessage(), 422);
+		}
+	}
+
+	public function sendMessages(array $to, $message)
+	{
+		if(count($to) > 500)
+			throw new Exception("You cannot send to more then 500 numbers in 1 request", 422);
+
+		try {
+			return $this->client->post($this->endpoint, [
+				'json' => [
+					'content' => $message,
+					"to" => $to
 				]
 			]);
 		} catch (Exception $e) {

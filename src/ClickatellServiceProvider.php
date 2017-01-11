@@ -1,5 +1,7 @@
 <?php
 
+namespace Ccom\Clickatell;
+
 use Illuminate\Support\ServiceProvider;
 
 class ClickatellServiceProvider extends ServiceProvider

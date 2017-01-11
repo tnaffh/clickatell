@@ -17,4 +17,12 @@ class ClickatellServiceProvider extends ServiceProvider
 	        __DIR__.'/config/clickatell.php' => config_path('clickatell.php'),
 	    ]);
 	}
+
+	/**
+	 * Register Application
+	 */
+	public function register()
+	{
+		
+	}
 }

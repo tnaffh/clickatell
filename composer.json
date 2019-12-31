@@ -17,5 +17,15 @@
         "psr-4": {
             "Tnaffh\\Clickatell\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tnaffh\\Clickatell\\ClickatellServiceProvider"
+            ],
+            "aliases": {
+            "Clickatell": "Tnaffh\\Clickatell\\Clickatell"
+            }
+        }
     }
 }

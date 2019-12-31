@@ -14,7 +14,7 @@ class ClickatellServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/clickatell.php' => config_path('clickatell.php'),
+            __DIR__.'/../../config/clickatell.php' => config_path('clickatell.php'),
         ]);
     }
 

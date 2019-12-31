@@ -1,22 +1,21 @@
 {
-    "name": "ccom/clickatell",
+    "name": "tnaffh/clickatell",
     "description": "A simple Laravel wrapper for the Clickatell REST Api",    
     "license": "MIT",
     "keywords": ["laravel", "clickatell", "sms"],
     "authors": [
         {
-            "name": "Gerhard Theunissen",
-            "email": "gerhard@ccom.co.za"
+            "name": "Timotheus Naftal",
+            "email": "tnaffh@gmail.com"
         }
     ],
     "minimum-stability": "stable",
     "require": {
-        "illuminate/support": "^5.2",
         "guzzlehttp/guzzle": "^6.2"
     },
     "autoload": {
         "psr-4": {
-            "Ccom\\Clickatell\\": "src/"
+            "Tnaffh\\Clickatell\\": "src/"
         }
     }
 }

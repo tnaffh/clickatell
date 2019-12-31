@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tnaffh\\Clickatell\\ClickatellServiceProvider"
+                "Tnaffh\\Clickatell\\Providers\\ClickatellServiceProvider"
             ],
             "aliases": {
 

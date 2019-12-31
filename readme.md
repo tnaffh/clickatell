@@ -2,12 +2,12 @@
 
 1. Install via Composer
 ```php
-composer require ccom/clickatell
+composer require tnaffh/clickatell
 ```
 
-2. Update config/app.php to add service provider
+2. Update config/app.php to add service provider *(optional)*
 ```php
-Ccom\Clickatell\ClickatellServiceProvider::class,
+Tnaffh\Clickatell\ClickatellServiceProvider::class,
 ```
 
 3. Publish Configs
